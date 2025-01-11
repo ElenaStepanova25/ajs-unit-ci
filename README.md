@@ -1,6 +1,4 @@
-# ajs-unit-ci
-**Project Sample Build status
-
+Домашнее задание к лекции «Unit-тестирование»
 Важно: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
 Важно: ESLint не должен выдавать ошибок.
@@ -15,23 +13,26 @@
 
 В личном кабинете на сайте netology.ru в поле комментария к домашней работе вставьте ссылки на ваш GitHub-проекты.
 
-ссылка на GitHub-проект
-
 Описание установки
 npm init
 # При инициалиализации в качестве тестовой команды указать:
 # test command: jest --coverage
-npm install --save-dev jest babel-jest @babel/core @babel/cli @babel/preset-env
+npm install --save-dev jest @babel/core @babel/cli @babel/preset-env
 npm install core-js@3
-Не забудьте про .babelrc и .browserslistrc.
+Не забудьте про babel.config.json и .browserslistrc.
 
-В .babelrc:
+В babel.config.json:
 
 {
-  "presets": [["@babel/preset-env", {
-    "useBuiltIns": "usage",
-    "corejs": 3
-  }]]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": "3.22"
+      }
+    ]
+  ]
 }
 Запуск тестов:
 
@@ -103,5 +104,3 @@ export function getLevel(userId) {
 Сделайте моки для функции fetchData и напишите тесты таким образом, чтобы обеспечить 100% покрытие тестами функции getLevel по строкам.
 
 Обратите внимание: тесты вам надо писать для функции getLevel
-
-**
