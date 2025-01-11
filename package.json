@@ -1,0 +1,28 @@
+{
+  "name": "ajs-unit-ci",
+  "version": "1.0.0",
+  "description": "Домашнее задание к лекции «Unit-тестирование»\r Важно: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaStepanova25/ajs-unit-ci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElenaStepanova25/ajs-unit-ci/issues"
+  },
+  "homepage": "https://github.com/ElenaStepanova25/ajs-unit-ci#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "core-js": "^3.40.0"
+  }
+}
